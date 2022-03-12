@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plant Eco - home</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- tailwind css -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- local taiwind css -->
+    <script src="../practice/script.js"></script>
+    <!-- hover css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+      .btn{
+        @apply shadow-md py-3 px-6 rounded-md transition duration-300
+      }
+      .btn-purple{
+        @apply bg-bookmark-purple text-white
+      }
+      .btn-white{
+        @apply  bg-bookmark-white
+      }
+   </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 "bookmark-purple":"#5267df",
+                 "bookmark-red":"#fa5959",
+                 "bookmark-blue":"#242a45",
+                 "bookmark-grey":"#242a45",
+                 "bookmark-white":"#f7f7f7",
+              },
+            },
+            container:{
+                center:true,
+                padding:"1rem",
+                screen:{
+                    lg:"1124px",
+                    xl:"1124px",
+                    "2xl":"1124px"
+                }
+            },
+            fontFamily:{
+                poppins:["poppins,sans-serif"]
+            }
+          }
+        }
+      </script>
+      <style>
+          
+          body,html{
+            overflow-x: hidden;
+          }
+          .img-fluid{
+            transition: .4s;
+            cursor: pointer;
+        }
+        .img-fluid:hover{
+            transform: scale(1.4);
+        }
+        .slider{
+          background-image: url("https://images.unsplash.com/photo-1518130242561-edb760734bee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGxhbnQlMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+      </style>
+</head>
+<body class="font-poppins">
+   <header  data-aos="fade-down"
+   data-aos-duration="2000">
+       <nav class="container flex items-center py-4 mt-4 border-2  sm:mt-12 ">
+          <div class="py-1">
+            <a href="index.html">
+              <i class=" fa fa-leaf text-bookmark-purple text-3xl"></i> 
+            <span class="text-2xl ml-1 uppercase">Plant Eco</span>
+            </a>
+          </div>
+          <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue  uppercase text-xs">
+            <li class="cursor-pointer text-xl hvr-underline-from-left"><a href="blog.html">BLOG</a></li>
+            <li class="cursor-pointer text-xl hvr-underline-from-left"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="cursor-pointer text-xl hvr-underline-from-left"><a href="contactus.html">Contact</a></li>
+            <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase shadow-2xl py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-bookmark-grey hover:border-2 hover:border-grey-700 hvr-border-fade">Login</button>
+          </ul>
+          <div class="flex sm:hidden flex-1 justify-end"><i class="fa fa-bars" aria-hidden="true"></i></div>
+       </nav>
+   </header> 
+   <!-- Hero -->
+   <section class="relative">
+     <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-5">
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2 class="text-bookmark-blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6 bolder" style="font-family: cursive;">Plants made Easy</h2>
+          <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
+            Patch helps you discover the best plants for your space, delivers them  to your door and helps you look after them.
+          </p>
+          <div class="flex flex justify-center flex-wrap gap-6">
+            <button type="button" class="hover:shadow-2xl py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-bookmark-grey hvr-float-shadow"> <i class="fa fa-shopping-cart mr-2" aria-hidden="true"></i>Buy Now</button>
+            <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-white  hover:bg-bookmark-purple hover:text-bookmark-white hover:shadow-2xl hvr-float-shadow"><i class="fa fa-shopping-basket mr-2" aria-hidden="true"></i>Add to cart</button>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+          <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/img-4.png" class="w-5/6 h-5/6 sm:3/4 sm:h-3/4 md:w-full" data-aos="fade-left"
+          data-aos-duration="2000"  alt="">
+          
+        </div>
+     </div>
+     <!-- rounded rectangle -->
+     <div class="hidden md:block overflow-hidden bg-bookmark-purple top-10 right-0 rounded-l-full absolute h-90 bg-bookmark-purple w-2/4 lg:-bottom-10 lg:right-35">
+       
+     </div>
+   </section>
+   <!-- Hero -->
+<!-- top rating  -->
+<h1 class="mt-20 mb-3 text-center  capitailze text-4xl " style="font-family: cursive;"data-aos="fade-down-right"data-aos-duration="2000">Top Rating / Best selling</h1>
+<hr class="w-2/5 mx-auto">
+  <div class="w-1/5 mx-auto  text-green-900 bg-green-300 my-3 " id="output"></div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-3  justify-items-center ">
+      <!-- my card -->
+      <div class="py-5 hvr-underline-from-center"data-aos="fade-right"data-aos-duration="2000">
+          <div class="rounded overflow-hidden hover:shadow-2xl max-w-sm md:ml-2 lg:ml-2 mx-auto">
+              <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbnQlMjBob21lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" class="w-full img-fluid" alt="">  
+          </div>
+          <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                  <p>Home gardning</p>
+              </div>
+              <p class="text-gray-500">A residential or private domestic garden such as the front garden or back garden is the most common form of garden. The front garden may be a formal and semi-public space and so subject to the constraints of convention and local laws.</p>
+          </div>
+          <div class="grid grid-flow-col gap-5 pb-2 px-6">
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer   hover:bg-transparent"  >#home</span>
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer   hover:bg-transparent"  >#pot</span>
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer  hover:bg-transparent "  >#moneyplant</span>
+          </div>
+      </div>
+      <div class="py-5 hvr-underline-from-center"data-aos="fade-down"data-aos-duration="2000">
+          <div class="rounded overflow-hidden hover:shadow-2xl max-w-sm md:ml-2 lg:ml-2 mx-auto" >
+              <img src="https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHBsYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" class="w-full img-fluid" alt="">  
+          </div>
+          <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                  <p>Aurora</p>
+              </div>
+              <p class="text-gray-500">While typically found in the yard of the residence, a garden may also be established on a roof, in an atrium or courtyard, on a balcony, in windowboxes, or on a patio. Residential gardens are typically designed at human scale</p>
+          </div>
+          <div class="grid grid-flow-col gap-5 pb-2 px-6">
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer  hover:bg-transparent "  >#plantontable</span>
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer  hover:bg-transparent "  >#smallplant</span>
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer   hover:bg-transparent"  >#grenny</span>
+          </div>
+      </div>
+      <div class="py-5 hvr-underline-from-center"data-aos="fade-up-left"data-aos-duration="2000">
+          <div class="rounded overflow-hidden hover:shadow-2xl max-w-sm md:ml-2 lg:ml-2 mx-auto" >
+              <img src="https://media.istockphoto.com/photos/potted-snake-plants-inside-a-beautiful-new-flat-or-apartment-picture-id1268045137?b=1&k=20&m=1268045137&s=170667a&w=0&h=VlbskLfIUPMfIO917CJA355xca8kZIDG36wjmf_vHdE=" class="w-full img-fluid" alt="">  
+          </div>
+          <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">
+                  <p>The beginner set</p>
+              </div>
+              <p class="text-gray-500">as they are most often intended for private use. However, the garden of a great house or a large estate may be larger than a public park, and may contain specialized gardens (such as those for exhibiting one particular type of plant) and eyecatchers.</p>
+          </div>
+          <div class="grid grid-flow-col gap-5 pb-2 px-6">
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:font-bold hover:bg-dark-500 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer   hover:bg-transparent" >#moneyplant</span>
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 font-base mb-2 hover:font-bold hover:bg-dark-500 hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer  hover:bg-transparent"  >#pot</span>
+              <span class="bg-gray-200 rounded-full px-3 text-sm py-2 font-base mb-2 hover:font-bold hover:bg-dark-500              
+              hover:ring-2 hover:ring-blue-500 transition duration-300 cursor-pointer  hover:bg-transparent
+              " >#koreangardon</span>
+          </div>
+      </div>
+  </div>
+<!-- top rating  -->
+   <!-- features -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-50 ">
+      <!-- heading -->
+      <div class="sm:w-3/4 lg:w-5/12 px-2 mx-auto"data-aos="flip-left">
+        <h1 class="text-4xl text-center text-bookmark-blue mb-2" style="font-family: cursive;">Features</h1>
+        <h1 class="text-3xl text-center text-bookmark-blue">What is the best plant for you ?</h1>
+        <p class="text-center text-bookmark-grey mt-4 ">Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Aenean commodo ligula eget dolor. Nulla facilisi. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. non, velit. Etiam rhoncus. Nunc interdum lacus sit amet orci....</p>
+      </div>
+      <!-- features #1 -->
+      <div class="relative mt-20 lg:mt-24 lg:mt-20">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- image -->
+          <div class="flex flex-1 justify-center z-10 m-10 lg:mb-0 ">
+            <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/img-2.jpg" data-aos="fade-right"
+            data-aos-duration="2000"  alt="">
+          </div>
+          <!-- content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">" Very happy with plant eco; plants arrived in excellent condition, were healthy... "</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, hic nihil pariatur commodi nisi aliquam!
+            </p>
+            <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-bookmark-purple hvr-float-shadow">More info</button>
+          </div>
+        </div>
+        <div class="hidden lg:block overflow-hidden bg-bookmark-purple  rounded-r-full absolute h-80 bg-bookmark-purple w-2/4 -bottom-24 -left-35"></div>
+      </div>
+      <div class="relative mt-20 lg:mt-40">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- image -->
+         
+          <!-- content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-4xl text-bookmark-blue">More ways to find
+              the perfect plant</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Praesent egestas tristique nibh. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci.
+            </p>
+            <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-bookmark-purple hvr-float-shadow">SHOP NOW</button>
+          </div>
+          <div class="flex flex-1 justify-center z-10 m-10 lg:mb-0">
+            <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/img-1.jpg" data-aos="fade-left"
+            data-aos-duration="3000" class="" alt="">
+          </div>
+        </div>
+        <div class="hidden lg:block overflow-hidden bg-bookmark-purple top-16 right-0 rounded-l-full absolute h-90 bg-bookmark-purple w-2/4 lg:-bottom-10 lg:right-35"></div>
+      </div>
+    </section>
+     
+       
+     <!-- slider -->
+     <section class="mb-10 py-10 slider">
+       <h1 class="text-center text-5xl mt-10" style="font-family: cursive;">Discover Our Favorites</h1>
+       <p class="text-center text-2xl my-3 mt-5"> seed some happiness with top picks for smart grow lights gardening, kits accessories and more.</p>
+      <div class="text-center">
+        <button type="button" class="hvr-icon-wobble-horizontal shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-white  hover:bg-bookmark-purple hover:text-bookmark-white hover:shadow-2xl my-4 ">Explore <span class="hvr-icon ml-3"></span></button>
+      </div>
+     </section>
+     <!-- slider -->
+     <!--product information  -->
+     <section class="py-5 bg-grey-600">
+      <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-3   justify-items-center">
+        <div class="py-5">
+          <div class="rounded overflow-hidden  max-w-sm md:ml-2 lg:ml-2 mx-auto">
+            <h1 class=" text-9xl  text-green-400 flex justify-center"><img src="https://img.icons8.com/color/96/000000/prize.png" class="hvr-wobble-horizontal cursor-pointer "/></h1>
+            <p class="my-3 text-3xl text-center bolder ">
+              Unbeatable quality
+            </p>
+            <p class="text-center">Unbeatable quality We source directly from top-rated growers, so we can sell the finest quality plants at the very best prices.</p>
+        </div>
+        </div>
+        <div class="py-5">
+          <div class="rounded overflow-hidden  max-w-sm md:ml-2 lg:ml-2 mx-auto">
+            <h1 class=" text-9xl text-green-400 flex justify-center"><img src="https://img.icons8.com/color/96/000000/supplier.png" class="hvr-wobble-horizontal cursor-pointer"/></h1>
+            <p class="my-3 text-3xl text-center bolder">
+              Delivery to your door
+            </p>
+            <p class="text-center">Delivery to your door We’ll bring your plants to your door, anywhere in GB. If you’re not 100% happy, tell us within 30 days and we’ll sort it.</p>
+        </div>
+        </div>
+        <div class="py-5">
+          <div class="rounded overflow-hidden  max-w-sm md:ml-2 lg:ml-2 mx-auto">
+            <h1 class=" text-9xl text-green-400 flex justify-center"><img src="https://img.icons8.com/color/96/000000/clock--v3.png" class="hvr-wobble-horizontal cursor-pointer"/></h1>
+            <p class="my-3 text-3xl text-center bolder">
+              All the help you need
+            </p>
+            <p class="text-center">All the help you need We’ll send you a free plant-parenting course and our plant doctors are always on call.</p>
+        </div>
+        </div>
+      </div>
+     </section>
+     <!--product information  -->
+     <!-- storeis -->
+     <section class="py-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-5   justify-center items-center">
+        <div>
+          <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/banner-video.jpg" data-aos="zoom-in"
+          data-aos-duration="2000" class="ml-4 object-fill" alt="">
+        </div>
+        <div class="mx-5 px-5">
+          <p class="my-5">LIFE GATHERS AROUND PLANTS</p>
+          <p class="text-4xl mb-4" style="font-family: cursive;">A Houseplant’s Journey
+            Home</p>
+            <p class="mb-4">Praesent egestas tristique nibh. Sed mollis, eros et ultrices tempus mauris ipsumaliquam libero, non adipiscing dolor urna a orci. Fusce convallis metus id felis luctus adipiscing. Integer tincidunt.</p>
+            <button type="button" class="hover:shadow-2xl py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-bookmark-grey hvr-float-shadow"> OUR STORIES</button>
+        </div>
+      </div>
+     </section>
+     <!-- storeis -->
+     <!-- order over -->
+     <section class="py-20 bg-yellow-100">
+       <h1 class="text-center text-2xl lg:text-5xl md:text-3xl" style="font-family: cursive;"><i class="fas fa-shipping-fast mr-2 text-red-400"data-aos="fade-right"
+        data-aos-duration="2000"></i>Free standard delivery <span class="underline">on orders over $30</span></h1>
+     </section>
+     <!-- order over -->
+     <!-- footer section -->
+     <section class="mt-5 bg-blue-400 text-white" >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-5   justify-center ">
+        <div class="ml-5 my-5">
+          <p class="my-2 font-bold"><a href="">COMPANY</a></p>
+          <P class="my-2">About</P>
+          <P class="my-2">Careers</P>
+          <P class="my-2">Press</P>
+          <P class="my-2">corporate Oraders</P>
+          <P class="my-2">Refer a Friend</P>
+          <P class="my-2">Our Guarantee</P>
+        </div>
+        <div class="ml-5 my-5">
+          <p class="my-2 font-bold"><a href="">SUPPORT</a></p>
+          <P class="my-2">Help + FAQs</P>
+          <P class="my-2">Track Your Order</P>
+          <P class="my-2">Shipping</P>
+          <P class="my-2">Returns</P>
+          <P class="my-2">Contact Support</P>
+          <P class="my-2"></P>
+        </div>
+        <div class="ml-5 my-5">
+          <p class="my-2 font-bold"><a href="">PLANT QUESTIONS?</a></p>
+          <P class="my-2">Plant Care Tips</P>
+          <P class="my-2">Plant Life Blog</P>
+          <P class="my-2">Vera Plant Care App</P>
+          <P class="my-2">Meet Plant Mom</P>
+          <P class="my-2">Contact the Grow-How <sup>TM</sup> Team</P>
+          <P class="my-2"></P>
+        </div>
+        <div class="mx-5 my-5">
+          <p class="my-2 font-bold"><a href="">STAY IN THE LOOP</a></p>
+          <P class="my-2">Stay in the loop with special offers,plant-parenting tips, and more.</P>
+          <div class="grid grid-flow-col gap-3">
+            <span class="bg-white-200 rounded-full px-2 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white  hover:bg-transparent cursor-pointer" ><i class="fab fa-twitter mr-2" aria-hidden="true"></i>twitter</span>
+             
+            <span class="bg-white-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white hover:bg-transparent  cursor-pointer" ><i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</span>
+        </div>
+          <div class="grid grid-flow-col gap-3">
+            <span class="bg-white-200 rounded-full px-2 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white  hover:bg-transparent cursor-pointer" ><i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</span>
+             
+            <span class="bg-white-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white hover:bg-transparent  cursor-pointer" ><i class="fab fa-youtube mr-2" aria-hidden="true"></i>Youtube</span>
+        </div>
+        </div>
+      </div>
+      <div class="grid">
+        <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2020/06/payments.png" class="m-5" alt="">
+      </div>
+      <!-- footer strip section -->
+        <section class="px-5 py-10 border-t-2">
+          <div class="flex justify-between">
+            <div>
+              <p>&copy; <span>2022 Plant Eco</span></p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+              <p>Terms of Use</p>
+              <p>Copyright & Tradmark</p>
+              <p>policy</p>
+              <p>Sitemap</p>
+              <p></p>
+            </div>
+          </div>
+        </section>
+      <!-- footer strip section -->
+     </section>
+     <!-- footer section -->
+     <script>
+      AOS.init();
+  </script>
+</body>
+</html>

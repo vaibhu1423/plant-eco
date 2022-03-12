@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plant Eco-Aboutus</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- tailwind css -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- local taiwind css -->
+    <script src="../practice/script.js"></script>
+    <!-- hover css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 "bookmark-purple":"#5267df",
+                 "bookmark-red":"#fa5959",
+                 "bookmark-blue":"#242a45",
+                 "bookmark-grey":"#242a45",
+                 "bookmark-white":"#f7f7f7",
+              },
+            },
+            container:{
+                center:true,
+                padding:"1rem",
+                screen:{
+                    lg:"1124px",
+                    xl:"1124px",
+                    "2xl":"1124px"
+                }
+            },
+            fontFamily:{
+                poppins:["poppins,sans-serif"]
+            }
+          }
+        }
+      </script>
+      <style>
+          body,html{
+              overflow-x: hidden;
+          }
+          .aboutusslider{
+            background-image: url("https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/bg-breadcrumb.jpg");
+            background-size: cover;
+            height: 40vh;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: left;
+          }
+      </style>
+</head>
+<body>
+    <!-- navbar section -->
+    <header>
+        <nav class="container flex items-center py-4 mt-4 border-2  sm:mt-12 " data-aos="fade-down"
+        data-aos-duration="2000">
+            <div class="py-1">
+              <a href="index.html">
+                <i class=" fa fa-leaf text-bookmark-purple text-3xl"></i> 
+              <span class="text-2xl ml-1 uppercase">Plant Eco</span>
+              </a>
+            </div>
+            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue  uppercase text-xs">
+              <li class="cursor-pointer text-xl hvr-underline-from-left"><a href="blog.html">BLOG</a></li>
+              <li class="cursor-pointer text-xl hvr-underline-from-left"><a href="aboutus.html">ABOUT US</a></li>
+              <li class="cursor-pointer text-xl hvr-underline-from-left"><a href="contactus.html">Contact</a></li>
+              <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase shadow-2xl py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-bookmark-grey hover:border-2 hover:border-grey-700 hvr-border-fade">Login</button>
+            </ul>
+            <div class="flex sm:hidden flex-1 justify-end"><i class="fa fa-bars" aria-hidden="true"></i></div>
+         </nav>
+    </header> 
+    <!-- navbar section -->
+    <!-- about us slider -->
+    <section class="aboutusslider flex justify-center items-center mt-5">
+        <h1 class="text-5xl uppercase text-blue-600 underline" style="font-family: 'Times New Roman', Times, serif;">About us</h1>
+    </section>
+    <section class="container my-5 px-3 lg:px-20">
+        <p class="text-center text-xl my-3 text-gray-500">FLACIO PHOTOSYNTHESIS STORIES</p>
+        <h2 class="text-2xl lg:text-6xl md:text-3xl text-center" style="font-family: cursive">We connect buyers and sellers with suitable, eco-friendly products.</h2>
+        <hr class="mx-auto  w-1/2 my-4">
+        <p class="text-center my-3 text-gray-400">Nothing adds more beauty and comfort to our homes and offices than the lush flowers and foliage of indoor plants. Bedrooms, bathrooms, kitchens, cubicles… There really isn’t a space a houseplant can’t enliven. Just add light and water, and you’ve got a growing indoor oasis. Bringing plants into your home is aesthetically pleasing and – amazingly – plants can offer strong health benefits as well!</p>
+    </section>
+    <!-- about us slider -->
+    <!-- three image card section -->
+    <section class="mb-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 px-4">
+            <div>
+                <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/about-2.jpg" class="w-full mb-0 md:mb-20 lg:mb-40 hvr-wobble-vertical" alt="">
+            </div>
+            <div>
+                <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/about-3.jpg" class="w-full hvr-wobble-vertical mb-0 md:mt-20 lg:mt-40" alt="">
+            </div>
+            <div>
+                <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/about-4.jpg" class="w-full hvr-wobble-vertical mb-0 md:mb-20 lg:mb-40" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- three image card section -->
+    <!-- how its  works section -->
+    <section class="py-4 bg-slate-200">
+       <div class="container">
+           <h4 class="text-2xl lg:text-5xl md:text-3xl text-center my-5" style="font-family: cursive;">Here's How It Works</h4>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:grid-cols-2 my-10">
+            <div class="border-2 text-center py-3">
+                <i class="fab fa-pagelines text-6xl lg:text-9xl text-green-600 hvr-wobble-horizontal"></i>
+                <p class="text-3xl my-5">Pick your Plant</p>
+            </div>
+            <div class="border-2 text-center py-3">
+                <i class="fab fa-canadian-maple-leaf text-6xl lg:text-9xl text-green-600 hvr-wobble-horizontal"></i>
+                 <p class="text-3xl my-5">Choose a pot color</p>
+            </div>
+            <div class="border-2 text-center py-3">
+                <i class="fas fa-box-open hvr-wobble-horizontal text-6xl lg:text-9xl text-slate-600"></i>
+            <p class="text-3xl my-5">Have it shipped</p>
+            </div>
+            <div class="border-2 text-center py-3">
+                <i class="fas fa-tree text-6xl hvr-wobble-horizontal lg:text-9xl text-green-600"></i>
+                 <p class="text-3xl my-5">Watch it grow</p>
+            </div>
+        </div>
+       </div>
+    </section>
+    <!-- how its  works section -->
+    <!-- user review section -->
+    <section class="container py-4">
+        <h5 class="text-2xl text-center md:text-3xl lg:text-4xl" style="font-family: 'Times New Roman', Times, serif;">" Very happy with flacio; plants arrived in excellent condition, were healthy looking with lots of new grwth and are thriving! "</h5>
+        <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2020/06/tesm-1.jpg" class="h-1/9 w-1/9 mx-auto my-3" style="border-radius: 50%;" alt="">
+        <p class="text-center">Ann Smith</p>
+    </section>
+    <!-- user review section -->
+     <!-- footer section -->
+     <section class="mt-5 bg-blue-400 text-white" >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-5   justify-center ">
+          <div class="ml-5 my-5">
+            <p class="my-2 font-bold"><a href="">COMPANY</a></p>
+            <P class="my-2">About</P>
+            <P class="my-2">Careers</P>
+            <P class="my-2">Press</P>
+            <P class="my-2">corporate Oraders</P>
+            <P class="my-2">Refer a Friend</P>
+            <P class="my-2">Our Guarantee</P>
+          </div>
+          <div class="ml-5 my-5">
+            <p class="my-2 font-bold"><a href="">SUPPORT</a></p>
+            <P class="my-2">Help + FAQs</P>
+            <P class="my-2">Track Your Order</P>
+            <P class="my-2">Shipping</P>
+            <P class="my-2">Returns</P>
+            <P class="my-2">Contact Support</P>
+            <P class="my-2"></P>
+          </div>
+          <div class="ml-5 my-5">
+            <p class="my-2 font-bold"><a href="">PLANT QUESTIONS?</a></p>
+            <P class="my-2">Plant Care Tips</P>
+            <P class="my-2">Plant Life Blog</P>
+            <P class="my-2">Vera Plant Care App</P>
+            <P class="my-2">Meet Plant Mom</P>
+            <P class="my-2">Contact the Grow-How <sup>TM</sup> Team</P>
+            <P class="my-2"></P>
+          </div>
+          <div class="mx-5 my-5">
+            <p class="my-2 font-bold"><a href="">STAY IN THE LOOP</a></p>
+            <P class="my-2">Stay in the loop with special offers,plant-parenting tips, and more.</P>
+            <div class="grid grid-flow-col gap-3">
+              <span class="bg-white-200 rounded-full px-2 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white  hover:bg-transparent cursor-pointer" ><i class="fab fa-twitter mr-2" aria-hidden="true"></i>twitter</span>
+               
+              <span class="bg-white-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white hover:bg-transparent  cursor-pointer" ><i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</span>
+          </div>
+            <div class="grid grid-flow-col gap-3">
+              <span class="bg-white-200 rounded-full px-2 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white  hover:bg-transparent cursor-pointer" ><i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</span>
+               
+              <span class="bg-white-200 rounded-full px-3 text-sm py-2 hover:font-bold hover:bg-dark-500 font-base mb-2 hover:ring-2 hover:ring-white hover:bg-transparent  cursor-pointer" ><i class="fab fa-youtube mr-2" aria-hidden="true"></i>Youtube</span>
+          </div>
+          </div>
+        </div>
+        <div class="grid">
+          <img src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2020/06/payments.png" class="m-5" alt="">
+        </div>
+        <!-- footer strip section -->
+          <section class="px-5 py-10 border-t-2">
+            <div class="flex justify-between">
+              <div>
+                <p>&copy; <span>2022 Plant Eco</span></p>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+                <p>Terms of Use</p>
+                <p>Copyright & Tradmark</p>
+                <p>policy</p>
+                <p>Sitemap</p>
+                <p></p>
+              </div>
+            </div>
+          </section>
+        <!-- footer strip section -->
+    <!-- aos start -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos start -->
+</body>
+</html>
